@@ -2,15 +2,15 @@
     "version":2,
     "builds": [
         {
-            "src":"./app.py",
+            "src":"/ai model/app.py",
             "use": "@vercel/python",
             "config":{"runtime":"python3.8"}
         }
     ],
-    "rewrites": [
+    "routes": [
         {
-            "source":"/(.*)",
-            "destination":"/"
+            "src":"/(.*)",
+            "dest":"/"
         }
     ]
 }
