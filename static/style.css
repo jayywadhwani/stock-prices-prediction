@@ -1,0 +1,470 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+color: #fff;
+}
+body{
+width: 100%;
+height: 100%;
+background-color: #141414;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5vw 2vw;
+    list-style: none;
+}
+nav>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5vw; 
+}
+
+.navleft>img{
+    width: 10vw;
+    height: 10vh;
+    mix-blend-mode:color-dodge;
+}
+
+nav>div>li,i{
+    color: #fff;
+}
+
+nav>div>li{
+    font-size: 1.3vw;
+}
+
+nav>div>i{
+    font-size: 1.7vw;
+}
+
+h1{
+    color: #fff;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin: 1.5vw 7vw;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+.top{
+    position: relative;
+}
+
+.word-changer1,.word-changer2,.word-changer3{
+    position: absolute;
+    font-size: 2vw;
+    margin: 0vw 1vw;
+}
+
+form{
+    margin: 6vw 7vw 0vw 7vw;
+}
+
+input{
+    width: 15vw;
+    height: 5vh;
+    padding: 0.8vw;
+    color: #fff;
+    background-color: #292929;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+form>button{
+    font-size: 1vw;
+    color: #000;
+    background-color: #38E177;
+    font-weight: bold;
+    width: 5vw;
+    height: 5vh;
+    padding: 0.5vw;
+    margin: 0vw 1vw;
+    border-radius: 8px;
+    border: none;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5vw 7vw;
+    color: #fff;
+    font-size: 1.2vw;
+}
+.boxes-up{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #292929;
+    width: 15vw;
+    height: 20vh;
+    padding: 2vw;
+    border-radius: 20px;
+}
+
+.prev,.high,.low,.open,.predicted_price{
+    font-size: 2vw;
+}
+.boxes-up>h3{
+    margin-bottom: 0.5vw;
+}
+
+.bottom-up{
+    margin: 0.5vw 5vw;
+}
+
+.bottom-up>h2{
+    margin: 1vw 0vw;
+    font-size: 2.5vw;
+}
+
+.bottom-up>h3{
+    margin: 1vw 0vw;
+    font-size: 1.5vw;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vw 5vw;
+}
+
+.boxes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #292929;
+    width: 20vw;
+    height: 20vh;
+    padding: 2vw;
+    border-radius: 20px;
+}
+
+.bottom>div>h4{
+    font-size: 1.3vw;
+    margin-bottom: 0.5vw;
+}
+
+.bottom>div>h3{
+    font-size: 2vw;
+}
+
+.notice{
+    margin: 1.5vw 3vw;
+    font-size: 1.05vw;
+}
+
+.info{
+    font-size: 1.1vw;
+    margin: 1vw 7vw;
+}
+
+.spang{
+    color: #38E177;
+}
+
+.spany{
+    color: rgba(255, 255, 0, 0.914);
+}
+
+.spanr{
+    color: #EA2831;
+}
+
+.stock-symbol{
+    margin: 1.5vw 0vw;
+    font-size: 2.2vw;
+    opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        margin: 0.5vh 2vh;
+    }
+    nav>div{
+        gap: 2.5vh; 
+    }
+    
+    .navleft>img{
+        width: 12vh;
+        height: 10vh;
+        mix-blend-mode:color-dodge;
+    }
+    
+    nav>div>li{
+        font-size: 1.4vh;
+    }
+
+    nav>div>i{
+        font-size: 1.7vh;
+    }
+    
+    h1{
+        color: #fff;
+        font-size: 2vh;
+        font-weight: bolder;
+        margin: 2vh 3vh;
+    }
+    
+    h1{
+        font-size: 3vh;
+    }
+    
+    .word-changer1,.word-changer2,.word-changer3{
+        position: absolute;
+        font-size: 2.5vh;
+        margin: 0.5vh 1vh;
+    }
+
+    form{
+        margin: 7vh 3vh 0vh 3vh;
+    }
+    
+    input{
+        width: 20vh;
+        height: 5vh;
+        padding: 0.8vh;
+        background-color: #292929;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 2vh;
+    }
+    
+    form>button{
+        font-size: 1.3vh;
+        width: 7vh;
+        padding: 0.5vh;
+        margin: 0.5vh 1vh;
+        border-radius: 8px;
+        border: none;
+    }
+    
+    .information{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1.5vh 3vh;
+        font-size: 1.4vh;
+        gap: 1vh;
+    }
+    .boxes-up{
+        width: 20vh;
+        height: 10vh;
+        padding: 2vh;
+        border-radius: 20px;
+    }
+    
+    .prev,.high,.low,.open,.predicted_price{
+        font-size: 1.7vh;
+    }
+    .boxes-up>h3{
+        margin-bottom: 0.5vh;
+    }
+    
+    .bottom-up{
+        margin: 0.5vh 3vh;
+    }
+    
+    .bottom-up>h2{
+        margin: 1vh 0vh;
+        font-size: 2.8vh;
+    }
+    
+    .bottom-up>h3{
+        margin: 1vh 0vh;
+        font-size: 2.3vh;
+    }
+    
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 1vh 3vh;
+    }
+    
+    .boxes{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 20vh;
+        height: 10vh;
+        padding: 2vh;
+        border-radius: 20px;
+        gap: 1.2vh;
+        margin-bottom: 1vh;
+    }
+    
+    .bottom>div>h4{
+        font-size: 1.8vh;
+        margin-bottom: 0.5vh;
+    }
+    
+    .bottom>div>h3{
+        font-size: 2.3vh;
+    }
+    
+    .notice{
+        margin: 1.5vh 3vh;
+        font-size: 1.5vh;
+    }
+    
+    .info{
+        font-size: 1.5vh;
+        margin: 1vh 3vh;
+        line-height: 2.5vh;
+    }
+
+    .stock-symbol{
+        margin: 1.5vh 0vh;
+        font-size: 2.8vh;
+        opacity: 0;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1000px) {
+    nav{
+        margin: 0.5vh 2vh;
+    }
+    
+    .navleft>img{
+        width: 15vh;
+        height: 12vh;
+        mix-blend-mode:color-dodge;
+    }
+    
+    nav>div>li{
+        font-size: 2vh;
+    }
+
+    nav>div>i{
+        font-size: 2vh;
+    }
+    
+    h1{
+        font-size: 5vh;
+        font-weight: bolder;
+        margin: 2vh 4vh;
+    }
+    
+    .word-changer1,.word-changer2,.word-changer3{
+        position: absolute;
+        font-size: 3vh;
+        margin: 0.5vh 1vh;
+    }
+
+    form{
+        margin: 8vh 4vh 0vh 4vh;
+    }
+    
+    input{
+        width: 25vh;
+        height: 5vh;
+        padding: 0.8vh;
+        background-color: #292929;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 2vh;
+    }
+    
+    form>button{
+        font-size: 1.8vh;
+        width: 10vh;
+        padding: 0.5vh;
+        margin: 0.5vh 1vh;
+        border-radius: 8px;
+        border: none;
+    }
+    .information{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1.5vh 4vh;
+        font-size: 2vh;
+        gap: 1vh;
+    }
+
+    .boxes-up{
+        width: 20vh;
+        height: 13vh;
+        padding: 2vh;
+        border-radius: 20px;
+    }
+
+    .prev,.high,.low,.open,.predicted_price{
+        font-size: 2.5vh;
+    }
+    .boxes-up>h3{
+        margin-bottom: 0.5vh;
+    }
+    
+    .bottom-up{
+        margin: 0.5vh 4vh;
+    }
+    
+    .bottom-up>h2{
+        margin: 1vh 0vh;
+        font-size: 4vh;
+    }
+    
+    .bottom-up>h3{
+        margin: 1vh 0vh;
+        font-size: 3vh;
+    }
+    .boxes{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 25vh;
+        height: 13vh;
+        padding: 2vh;
+        border-radius: 20px;
+        gap: 1vh;
+        margin-bottom: 1vh;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 1vh 4vh;
+    }
+
+    .bottom>div>h4{
+        font-size: 2.5vh;
+        margin-bottom: 0.5vh;
+    }
+    
+    .bottom>div>h3{
+        font-size: 3vh;
+    }
+
+    .info{
+        font-size: 2vh;
+        margin: 1vh 5vh;
+        line-height: 3vh;
+    }
+    .notice{
+        margin: 1.5vh 4vh;
+        font-size: 2vh;
+    }
+
+    .stock-symbol{
+        margin: 1.5vh 0vh;
+        font-size: 3vh;
+        opacity: 0;
+    }
+}

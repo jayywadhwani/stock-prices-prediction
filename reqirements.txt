@@ -1,0 +1,5 @@
+Flask==1.1.2
+yfianace==0.2.40
+scikit-learn==1.0.2
+pandas==1.4.4
+numpy==1.21.5
