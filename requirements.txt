@@ -5,5 +5,5 @@ pandas==2.2.2
 numpy==1.26.4
 gunicorn==20.1.0
 Werkzeug==3.0.3
-setuptools==70.0.0
+setuptools
 watchdog==4.0.1
