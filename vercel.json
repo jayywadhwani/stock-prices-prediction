@@ -3,14 +3,14 @@
     "builds": [
       {
         "src": "start.sh",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "ai_model" }
+        "use": "@vercel/python",
+        "config": { "runtime":"python 3.9" }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "start.sh"
+        "dest": "/"
       }
     ]
   }
