@@ -3,5 +3,6 @@ yfinance==0.2.4
 numpy==1.21.2
 pandas==1.3.3
 scikit-learn==0.24.2
+scikit-learn[linear_model,model_selection,metrics]
 feature-engine==1.1.1
 Werkzeug
