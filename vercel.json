@@ -2,10 +2,6 @@
     "version": 2,
     "builds": [
       {
-        "src": "install_distutils.sh",
-        "use": "@vercel/bash"
-      },
-      {
         "src": "app.py",
         "use": "@vercel/python",
         "config": {
