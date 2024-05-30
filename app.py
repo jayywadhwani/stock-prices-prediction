@@ -1,6 +1,5 @@
 from flask import Flask,render_template,request
 from model import *
-import yfinance as yf
 
 app = Flask(__name__)
 
@@ -17,5 +16,5 @@ def predict():
         except Exception as e:
               return "Plesae Reload the page some error occured!!!"
 
-# if __name__ == "__main__":
-#       app.run(debug=True)
+if __name__ == "__main__":
+      app.run(debug=True)
