@@ -27,7 +27,7 @@ def analysis(symbol):
     
         data = Winsorizer(capping_method='iqr', tail='both', fold=1.5, variables=['Open', 'Close', 'Low', 'High', 'prev_close','Volume']).fit_transform(df)
 
-        xtrain, xtest, ytrain, ytest = train_test_split(df[['Open', 'High', 'Low', 'prev_close','Volume']], df['Close'], test_size=0.2, random_state=42, shuffle=False)
+        xtrain, xtest, ytrain, ytest = train_test_split(df[['Open', 'High', 'Low', 'prev_close','Volume']], df['Close'], test_size=0.3, random_state=42, shuffle=False)
 
         model = LinearRegression()
         model.fit(xtrain, ytrain)
