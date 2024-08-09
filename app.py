@@ -8,6 +8,7 @@ def predict():
             symbol = 'SBIN'
             if request.form.get('input_text_symbol') != 'SBIN':
                   symbol= request.form.get('input_text_symbol')
+                  symbol = symbol.strip()
             if request.form.get('input_text_symbol') == None or request.form.get('input_text_symbol')==  "" or request.form.get('input_text_symbol')==  "NULL":
                   symbol = 'SBIN'
             predicted_value,mseerror,maerror,r2score,crscore,previousClose,todayOpen,dayHigh,dayLow,stock_symbol = analysis(symbol)
