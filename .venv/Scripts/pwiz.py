@@ -1,4 +1,4 @@
-#!c:\ai_model\.venv\Scripts\python.exe
+#!C:\ai_model\.venv\Scripts\python.exe
 
 import datetime
 import os
