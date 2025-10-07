@@ -23,7 +23,6 @@ def analysis(symbol):
         df['prev_close'] = series_shifted_close
         df.fillna(df.mean(), inplace=True)
         df.drop_duplicates(inplace=True)
-        df.drop(['Adj Close'], axis=1, inplace=True)
     
         data = Winsorizer(capping_method='iqr', tail='both', fold=1.5, variables=['Open', 'Close', 'Low', 'High', 'prev_close','Volume'])
         df=data.fit_transform(df)
@@ -39,7 +38,7 @@ def analysis(symbol):
         mae_error = mean_absolute_error(ytest, ypred2)
         r2s = r2_score(ytest, ypred2)
         crscore = cross_val_score(model, xtrain, ytrain, cv=5)
-        return (np.round(ypred[0], decimals=2), np.round(mse_error, decimals=2), np.round(mae_error, decimals=2), np.round(r2s, decimals=2), np.round(crscore[0], decimals=2), np.round(previousClose, decimals=2), np.round(todayOpen, decimals=2), np.round(dayHigh, decimals=2), np.round(dayLow, decimals=2),stock_name)
+        return (np.round(ypred[0][0], decimals=2), np.round(mse_error, decimals=2), np.round(mae_error, decimals=2), np.round(r2s, decimals=2), np.round(crscore[0], decimals=2), np.round(previousClose, decimals=2), np.round(todayOpen, decimals=2), np.round(dayHigh, decimals=2), np.round(dayLow, decimals=2),stock_name)
     except Exception as e:
         return ('Model error occured')
 
